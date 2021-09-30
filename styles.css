@@ -127,11 +127,16 @@ body {
   padding: 0 5px;
   grid-area: two;
 }
+.plan-two p {
+  color: var(--neutral-dark);
+}
 .plan-three {
   padding: 0 5px;
   grid-area: three;
 }
-
+.plan-three p {
+  color: var(--neutral-desaturated);
+}
 .plan-four {
   padding: 0 20px 0 100px;
   align-self: center;
