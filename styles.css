@@ -24,7 +24,7 @@ p {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   font-family: "Red Hat Display", sans-serif;
   background: url(images/pattern-background-desktop.svg) no-repeat fixed,
@@ -110,6 +110,7 @@ body {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  transition: all 0.2s ease-in-out;
 }
 .order-header > object {
   display: flex;
@@ -136,26 +137,11 @@ body {
   align-self: center;
   grid-area: four;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   body {
-    height: 100vh;
+    min-height: 100vh;
     background: url(images/pattern-background-mobile.svg) no-repeat fixed,
       var(--primary-pale);
     background-size: contain;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .button-container a {
-    width: auto;
-  }
-  .order-container {
-    display: flex;
-    flex-flow: column wrap;
-    border-radius: 30px;
-    background-color: white;
-    padding-bottom: 10px;
-    box-shadow: 0px 15px 30px -25px var(--primary-bright);
   }
 }
